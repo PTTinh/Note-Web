@@ -1,0 +1,101 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: 0;
+}
+
+body {
+	background-color: bisque;
+}
+
+.home {
+	margin: auto;
+	margin-top: 100px;
+	text-align: center;
+	padding: 20px;
+}
+
+.header {
+	background-color: #ff9100;
+	height: 20px;
+}
+
+.nav {
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav ul {
+	display: flex;
+	list-style: none;
+	text-decoration: none;
+}
+
+.nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	padding: 10px;
+}
+.login {
+	background-color: #f3e6cc;
+	border: 1px solid #ccc;
+	padding: 20px;
+	width: 300px;
+	margin: 50px auto;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+}
+
+.login h1 {
+	text-align: center;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+	width: calc(100% - 20px);
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.login input[type="submit"] {
+	width: 100%;
+	padding: 10px;
+	background-color: #ff9100;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+.login input[type="submit"]:hover {
+	background-color: #e68a00;
+}
+
+.two-forms{
+    display: flex;
+    gap: 10px;
+}
+
+.two-col{
+    display: flex;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.831);
+    font-size: small;
+	margin-bottom: 5px;
+}
+.two-col .one{
+    display: flex;
+    gap: 5px;
+}
+.two label a{
+    text-decoration: none;
+    color: black;
+}
+.two label a:hover{
+    text-decoration: underline;
+}

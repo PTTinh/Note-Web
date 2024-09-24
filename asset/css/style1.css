@@ -1,0 +1,372 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: 0;
+}
+
+body {
+	background-color: rgb(255, 255, 255);
+}
+
+.home {
+	margin: auto;
+	margin-top: 100px;
+	text-align: center;
+	padding: 20px;
+}
+
+.header {
+	background-color: #ff9100;
+	height: 20px;
+}
+
+.nav {
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav ul {
+	display: flex;
+	list-style: none;
+	text-decoration: none;
+}
+
+.nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	padding: 10px;
+}
+
+.login {
+	background-color: #f3e6cc;
+	border: 1px solid #ccc;
+	padding: 20px;
+	width: 300px;
+	margin: 50px auto;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+}
+
+.login h1 {
+	text-align: center;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+	width: calc(100% - 20px);
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.login input[type="submit"] {
+	width: 100%;
+	padding: 10px;
+	background-color: #ff9100;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+.login input[type="submit"]:hover {
+	background-color: #e68a00;
+}
+
+.main {
+	display: flex;
+}
+
+.aside-menu {
+	width: 10%;
+	background-color: #edd7ac;
+}
+
+.aside-menu ul li a {
+	text-decoration: none;
+	color: #ff4400;
+	padding: 10px 5px;
+	display: block;
+	text-align: center;
+}
+
+.aside-menu nav ul li {
+	border: #e68a00 1px solid;
+}
+
+main {
+	width: 90%;
+}
+
+.note-add h1 {
+	color: #333;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+.note-add form {
+	padding: 10px;
+}
+
+.note-add form div {
+	display: flex;
+	flex-direction: column;
+	padding: 5px;
+}
+
+.content input,
+.content p,
+.content textarea {
+	padding: 5px;
+}
+
+.note-add form div label {
+	margin-bottom: 5px;
+}
+
+.content input[type="text"] {
+	padding: 5px;
+}
+
+.submit input {
+	margin-top: 10px;
+	width: 100px;
+	padding: 5px;
+	background-color: #ff9100;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 4px;
+
+}
+
+.submit input:hover {
+	background-color: #e68a00;
+}
+
+.note-add .content textarea {
+	padding: 5px;
+	resize: none;
+}
+
+.note-index {
+	height: 100vh;
+}
+
+.note-index div {
+	margin: auto;
+	text-align: center;
+	padding: 120px;
+	height: 100px;
+	width: 100px;
+}
+
+.note-index div a {
+	text-decoration: none;
+	color: #ff9100;
+	width: 100px;
+	height: 100px;
+	border: 2px dashed #ff9100;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: #ffffff;
+
+}
+
+.btn a {
+	margin-top: 10px;
+	text-decoration: none;
+	text-align: center;
+	width: 100px;
+	padding: 5px;
+	background-color: #ff9100;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 4px;
+
+}
+
+.btn a:hover {
+	background-color: #e68a00;
+}
+
+.note-view h1 {
+	color: #333;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+.note-view form {
+	padding: 10px;
+}
+
+.note-view>form>div>.content {
+	display: flex;
+	flex-direction: column;
+	padding: 5px;
+}
+
+.note-view form div label {
+	margin-bottom: 5px;
+}
+
+.note-view form input[type="submit"] {
+	margin-top: 10px;
+	width: 100px;
+	padding: 5px;
+	background-color: #ff9100;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 4px;
+
+}
+
+.note-view form input[type="submit"]:hover {
+	background-color: #e68a00;
+}
+
+.note-view form textarea {
+	resize: none;
+	padding: 5px;
+}
+
+.note-list table {
+	margin: 20px auto;
+	border: 2px solid;
+	border-collapse: collapse;
+}
+
+.note-list th,
+.note-list td {
+	border: 2px solid;
+	text-align: center;
+	padding: 5px;
+}
+
+.note-list>table>tbody>tr>td>a {
+	border: 1px solid black;
+}
+
+.note-list tr td a {
+	display: flex;
+	color: #000000;
+	justify-content: center;
+}
+
+.note-list {
+	padding: 10px;
+	margin-left: 5px;
+}
+
+.create-note {
+	background-color: #ff9100;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	text-align: center;
+	position: fixed;
+	bottom: 50px;
+	right: 40px;
+}
+
+.create-note a {
+	color: #fff;
+	font-size: 45px;
+	margin: auto;
+	padding: 5px;
+	list-style: none;
+	text-decoration: none;
+}
+
+.content {
+	padding: 10px;
+	border: #000000 1px solid;
+	height: 400px;
+}
+
+/* card */
+.card {
+	margin: 20px;
+	border: 1px solid #14151437;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0 0 5px #92939159;
+	width: calc(20% - 5px);
+	height: 120px;
+	background-color: #fdfbea;
+}
+
+.card-main {
+	padding: 10px;
+}
+
+.card-info p {
+	text-align: justify;
+	padding: 10px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.card-list {
+	display: flex;
+	flex-wrap: wrap;
+	height: 100vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.card-header {
+	display: flex;
+	justify-content: space-between;
+	background-color: #edd7ac;
+}
+
+.card-header a {
+	text-decoration: none;
+	font-size: larger;
+	padding: 0 4px;
+	margin-right: 2px;
+}
+
+.card-header a:hover {
+	border-radius: 20px;
+	background-color: #ff4400;
+}
+
+.file-download {
+	display: flex;
+	padding: 10px 5px;
+}
+
+.file-download a {
+	margin-left: 10px;
+	padding: 2px;
+	border: 1px solid #000000;
+	text-decoration: none;
+	color: #fff;
+	background-color: #ff9100;
+	border-radius: 10px;
+}
+
+.file-upload {
+	padding: 10px 5px;
+}
+.xt{
+	margin: 20px;
+	padding-top: 80px;
+}
+.xt a{
+	text-decoration: none;
+	color: #fff;
+	background-color: #ff9100;
+	padding: 5px;
+	border-radius: 5px;
+}
