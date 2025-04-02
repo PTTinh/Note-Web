@@ -1,7 +1,7 @@
-<?php include "_header.php" ?>
+<?php include "_header.php";
+?>
 <?php
 if (isset($_SESSION["username"]) == false) {
-
     $username = "";
     if (is_post_method()) {
         $username = $_POST["user"] ?? "";
@@ -32,7 +32,7 @@ if (isset($_SESSION["username"]) == false) {
         }
     }
 } else {
-    // redirect_to("index.php");
+    redirect_to("index.php");
 }
 ?>
 <div class="login">

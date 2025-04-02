@@ -25,7 +25,7 @@ if (is_post_method()) {
     <form action="note-add.php" method="post" enctype="multipart/form-data">
         <div class="content">
             <p><?= $create_date ?></p>
-            <textarea name="content" placeholder="Nội dung" cols="30" rows="30" required></textarea>
+            <textarea name="content" placeholder="Nội dung" cols="30" rows="30"></textarea>
         </div>
         <div class="file">
             <label for="attachment">File đính kèm</label>

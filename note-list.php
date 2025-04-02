@@ -4,15 +4,19 @@ kt_dang_nhap("pages/login.php");
 $user_id = $_SESSION["user_id"] ?? 0;
 $sql = "SELECT * FROM task WHERE create_user_id = ?";
 $notes = db_select($sql, [$user_id]);
-$note = $notes[0];
+$note = $notes[0] ?? null;
 $count = count($notes);
 $xt = $_GET['xt'] ?? 0;
 $tmp = empty($xt) ? true : false;
-
 ?>
 <div class="note-list">
     <h2>Danh sách ghi chú</h2>
     <div class="card-list">
+        <?php if (empty($notes)) {
+            echo "<div style='text-align: center; margin: auto;'>
+            Danh sách trống.
+            </div>";
+        } ?>
         <?php
         $i = 0;
         $n = 11;
@@ -65,10 +69,4 @@ $tmp = empty($xt) ? true : false;
         <a href="note-add.php" title="Tạo ghi chú">+</i></a>
     </label>
 </div>
-<?php if (empty($notes)) {
-    echo "<div style='text-align: center; margin: auto;'>
-            Danh sách trống.
-</div>";
-} ?>
-
 <?php include "_footer.php" ?>

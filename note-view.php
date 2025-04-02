@@ -35,8 +35,6 @@ if (count($notes) == 0) {
     $notes = $notes[0];
 }
 ?>
-
-
 <div class="note-view">
     <h1>Ghi chú</h1>
     <form action="note-view.php?id=<?= $id ?>" method="post" enctype="multipart/form-data">
@@ -46,10 +44,14 @@ if (count($notes) == 0) {
                 <textarea name="content" placeholder="Nội dung" cols="30" rows="30"><?= $notes["content"] ?></textarea>
             </div>
         </div>
-        <div class="file-download">
-            <p>File: <?= $notes["attachment"] ?></p>
-            <a title="Tải xuống" onclick="return confirm('Xác nhận tải xuống')" href="download.php?id=<?=$id?>"><i class='bx bx-download'></i></a>
-        </div>
+        <?php 
+        if(!empty($notes["attachment"])) {
+            echo "<div class='file-download'>
+                    <p>File: {$notes["attachment"]}</p>
+                    <a title='Tải xuống' onclick=\"return confirm('Xác nhận tải xuống')\" href='download.php?id={$id}'><i class='bx bx-download'></i></a>
+                </div>";
+        }
+        ?>
         <div class="file-upload">
             <label for="attachment">Đổi file:</label>
             <input type="file" name="attachment" id="attachment">
